@@ -41,7 +41,7 @@ public class CustomStringMethods {
               Example:  If myString is "reverse me!", this method should return "e me!revers"; 
     */
     public String halvesReversed(String myString) {
-        if (myString.length() % 2 == 1 && myString.length() > 2) {
+        if (myString.length() % 2 == 1 && myString.length() >= 2) {
             String firstHalf = myString.substring(0, myString.length() / 2 - 1);
             String secondHalf = myString.substring(myString.length() / 2 - 1);
             return secondHalf + firstHalf;
